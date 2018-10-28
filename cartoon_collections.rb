@@ -10,7 +10,7 @@ end
 
 def long_planeteer_calls(array)# code an argument here
   # Your code here
-  return true if array.any? {|call| call.length == 4} 
+  array.each {|call| return true if call.length == 4} 
   false 
 end
 
